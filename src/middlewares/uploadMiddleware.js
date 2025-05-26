@@ -1,38 +1,3 @@
-// const multer = require('multer');
-// const path = require('path');
-
-// const MAX_FILE_SIZE = parseInt(process.env.MAX_FILE_SIZE_BYTES, 10) || 5242880;
-
-// const storage = multer.diskStorage({
-//   destination: (req, file, cb) => {
-//     // e.g., uploads/{userId}/{type}/
-//     const userId = req.user.id;
-//     const folder = file.mimetype.startsWith('image/') ? 'images' : 'pdfs';
-//     const dest = path.join(__dirname, '../../uploads', userId, folder);
-//     cb(null, dest);
-//   },
-//   filename: (req, file, cb) => {
-//     const ext = path.extname(file.originalname);
-//     const filename = `${Date.now()}-${Math.round(Math.random() * 1e9)}${ext}`;
-//     cb(null, filename);
-//   },
-// });
-
-// const fileFilter = (req, file, cb) => {
-//   if (file.fieldname === 'file') {
-//     const allowedMime = ['image/jpeg', 'image/png', 'application/pdf'];
-//     if (!allowedMime.includes(file.mimetype)) {
-//       return cb(new Error('UNSUPPORTED_MEDIA_TYPE'), false);
-//     }
-//   }
-//   cb(null, true);
-// };
-
-// const upload = multer({ storage, limits: { fileSize: MAX_FILE_SIZE }, fileFilter });
-
-// module.exports = { upload };
-
-
 // uploadMiddleware.js
 const multer = require('multer');
 const path  = require('path');
