@@ -1,5 +1,7 @@
 # Storage Management System API
 
+ Live link: https://storage-management-api-uqjx.onrender.com/
+
  ## Setup
  1. Clone the repository
  2. Install dependencies: `npm install`
